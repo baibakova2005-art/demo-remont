@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+/* Строгая палитра: тёплый светлый фон, сигнальный оранжевый акцент (контраст 5.2:1 на белом). */
+@theme {
+  --font-sans: "Onest Variable", system-ui, sans-serif;
+  --font-display: "Onest Variable", system-ui, sans-serif;
+
+  --color-bg: #f4f2ed;
+  --color-surface: #ffffff;
+  --color-soft: #f6e6da;
+  --color-ink: #1b1a17;
+  --color-muted: #5e5a52;
+  --color-line: #e2ded4;
+  --color-line-strong: #bdb6a8;
+  --color-accent: #c2410c;
+  --color-accent-hover: #9a3412;
+  --color-accent-text: #b43c0b;
+  --color-on-accent: #ffffff;
+  --color-dark: #23211d;
+}
+
+:root {
+  --radius-btn: 8px;
+  --radius-field: 8px;
+  --radius-card: 12px;
+  --shadow-btn:
+    0 1px 2px rgba(120, 45, 10, 0.15), 0 8px 18px -10px rgba(120, 45, 10, 0.5);
+  --shadow-card:
+    0 1px 2px rgba(27, 26, 23, 0.05), 0 14px 30px -18px rgba(27, 26, 23, 0.25);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+h1,
+h2,
+h3 {
+  overflow-wrap: break-word;
+  text-wrap: balance;
+}
+input[type="range"] {
+  accent-color: #c2410c;
+}
+
+:where(a, button, input, textarea, select, summary, [tabindex]):focus-visible {
+  outline: 2px solid #c2410c;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
