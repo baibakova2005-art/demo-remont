@@ -4,6 +4,10 @@
 
 **Живая версия:** https://baibakova2005-art.github.io/demo-remont/
 
+![Первый экран](screenshots/oblozhka.jpg)
+
+Полные снимки страницы: [компьютер](screenshots/kompyuter.jpg) · [телефон 360 px](screenshots/telefon.jpg)
+
 Ремонт квартир по фиксированной смете: калькулятор стоимости, оплата по этапам, гарантия 3 года.
 
 ## Стек
