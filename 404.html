@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Страница не найдена</title>
+    <meta name="robots" content="noindex" />
+    <meta name="theme-color" content="#2563eb" />
+    <link rel="icon" href="/demo-remont/favicon.svg" type="image/svg+xml" />
+    <style>
+      :root {
+        color-scheme: light;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        min-height: 100dvh;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+        font:
+          16px/1.6 system-ui,
+          -apple-system,
+          "Segoe UI",
+          sans-serif;
+        color: #0f172a;
+        background: #fff;
+      }
+      .obolochka {
+        max-width: 520px;
+        text-align: center;
+      }
+      .kod {
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: #2563eb;
+        margin: 0 0 12px;
+      }
+      h1 {
+        font-size: clamp(28px, 6vw, 40px);
+        line-height: 1.15;
+        margin: 0 0 16px;
+      }
+      p {
+        color: #475569;
+        margin: 0 0 28px;
+      }
+      .knopka {
+        display: inline-block;
+        padding: 13px 26px;
+        border-radius: 8px;
+        background: #2563eb;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 500;
+        text-decoration: none;
+      }
+      .knopka:hover {
+        background: #1d4ed8;
+      }
+      .knopka:focus-visible {
+        outline: 2px solid #2563eb;
+        outline-offset: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="obolochka">
+      <p class="kod">Ошибка 404</p>
+      <h1>Такой страницы нет</h1>
+      <p>
+        Возможно, адрес набран с опечаткой или страницу перенесли. Вернитесь на
+        главную — оттуда найдётся всё остальное.
+      </p>
+      <a class="knopka" href="/demo-remont/">На главную</a>
+    </main>
+  </body>
+</html>
