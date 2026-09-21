@@ -16,14 +16,7 @@ export function DemoBar() {
     <div className="bg-ink text-bg">
       <p className="mx-auto max-w-6xl px-5 py-2 text-center text-[13px] leading-snug">
         Демо-сайт для портфолио: компания вымышленная, цены и тексты — образец.{" "}
-        <a
-          href="https://www.fl.ru/users/baibakova2005/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="font-semibold underline underline-offset-2"
-        >
-          Разработка — Екатерина, FL.ru
-        </a>
+        <span className="font-semibold">Разработка — Екатерина</span>
       </p>
     </div>
   );
