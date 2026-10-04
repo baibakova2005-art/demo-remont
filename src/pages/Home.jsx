@@ -211,7 +211,10 @@ export default function Home() {
         <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 py-[clamp(48px,8vw,96px)] lg:grid-cols-[1.1fr_0.9fr]">
           <div>
             <p className="mb-5 inline-flex rounded-full bg-soft px-4 py-1.5 text-sm font-semibold text-accent-text">
-              Ремонт квартир в Москве и ближнем Подмосковье
+              <span className="sm:hidden">Москва и ближнее Подмосковье</span>
+              <span className="hidden sm:inline">
+                Ремонт квартир в Москве и ближнем Подмосковье
+              </span>
             </p>
             <h1 className="text-[clamp(2.4rem,1.3rem+4vw,4.2rem)] font-bold leading-[1.02] tracking-[-0.03em]">
               Ремонт под ключ по смете, которая не растёт в процессе
